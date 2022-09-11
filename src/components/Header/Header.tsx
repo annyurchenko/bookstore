@@ -1,27 +1,27 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { ROUTE } from "../../routes";
+import { CustomLink } from "../CustomLink/CustomLink";
 import { StyledHeader, NavElement } from "./styles";
 
 export const Header = () => {
   return (
     <StyledHeader>
       <NavElement>
-        <Link to="/">MainLogo</Link>
+        <CustomLink to={ROUTE.HOME}> MainLogo</CustomLink>
       </NavElement>
       <NavElement>
-        <Link to="search">Search</Link>
+        <CustomLink to={ROUTE.SEARCH}>Search</CustomLink>
       </NavElement>
       <NavElement>
-        <Link to="favorites">Favorites</Link>
+        <CustomLink to={ROUTE.FAVORITES}>Favorites</CustomLink>
       </NavElement>
       <NavElement>
-        <Link to="cart">Cart</Link>
+        <CustomLink to={ROUTE.CART}>Cart</CustomLink>
       </NavElement>
       <NavElement>
-        <Link to="sign-in">SignIn</Link>
+        <CustomLink to={ROUTE.SIGN_IN}>SignIn</CustomLink>
       </NavElement>
       <NavElement>
-        <Link to="sign-up">SignUp</Link>
+        <CustomLink to={ROUTE.SIGN_UP}>SignUp</CustomLink>
       </NavElement>
     </StyledHeader>
   );
