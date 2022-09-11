@@ -4,5 +4,9 @@ import { ROUTE } from "../routes";
 export const RequireAuth = () => {
   const isAuth = false;
 
-  return isAuth ? <Outlet /> : <Navigate to={`/${ROUTE.SIGN_IN}`} />;
+  return isAuth ? (
+    <Outlet />
+  ) : (
+    <Navigate to={`/${ROUTE.ACCOUNT}/${ROUTE.SIGN_IN}`} />
+  );
 };

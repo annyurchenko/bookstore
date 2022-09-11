@@ -11,7 +11,6 @@ const StyledOutlet = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-color: azure; //to delete later
 `;
 
 export { StyledMainTemplate, StyledOutlet };

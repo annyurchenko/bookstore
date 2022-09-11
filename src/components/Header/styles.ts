@@ -1,15 +1,24 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.nav`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
   padding-block: 20px 24px;
-  background-color: bisque; //to delete later
 `;
 
 const NavElement = styled.li`
   list-style: none;
 `;
 
-export { StyledHeader, NavElement };
+const NavIcons = styled.div`
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+
+  margin: 20px 19px;
+`;
+
+export { StyledHeader, NavElement, NavIcons };

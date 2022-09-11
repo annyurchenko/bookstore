@@ -12,7 +12,6 @@ const resetCSS = css`
   html {
     line-height: 1.15;
     box-sizing: border-box;
-    font-family: sans-serif;
   }
 
   main {

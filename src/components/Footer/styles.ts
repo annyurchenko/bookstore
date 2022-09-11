@@ -5,7 +5,6 @@ const StyledFooter = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding-block: 36px 35px;
-  background-color: beige; //to delete later
 `;
 
 const Copyrite = styled.p`

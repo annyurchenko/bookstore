@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
 ${resetCSS};
 
 body {
-    font-family: "Inter", Sans-Serif;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     color: ${Color.Primary};
