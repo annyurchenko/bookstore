@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Color } from "../../ui/colors";
 
-const Searchbar = styled.div`
+const Searchbar = styled.form`
   display: flex;
   align-items: center;
   justify-content: space-between;
