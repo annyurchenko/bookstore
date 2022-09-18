@@ -1,3 +1,7 @@
 export const HomePage = () => {
-  return <div>Lorem ipsum dolor sit amet.</div>;
+  return (
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  );
 };

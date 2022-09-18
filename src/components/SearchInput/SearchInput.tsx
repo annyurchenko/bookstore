@@ -1,6 +1,6 @@
 import { ChangeEvent } from "react";
 import { Searchbar, StyledInput } from "./styles";
-import { ReactComponent as SearchLogo } from "../../assets/icons/search.svg";
+import { SearchLogo } from "assets";
 
 interface IProps {
   type: string;
@@ -12,12 +12,7 @@ interface IProps {
 export const SearchInput = ({ type, placeholder, value, onChange }: IProps) => {
   return (
     <Searchbar>
-      <StyledInput
-        type={type}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-      />
+      <StyledInput type={type} placeholder={placeholder} value={value} onChange={onChange} />
       <SearchLogo />
     </Searchbar>
   );

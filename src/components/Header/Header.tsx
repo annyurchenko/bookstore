@@ -3,10 +3,8 @@ import { CustomLink } from "../CustomLink/CustomLink";
 import { StyledHeader, NavElement, NavIcons } from "./styles";
 import { SearchInput } from "../SearchInput/SearchInput";
 
-import { ReactComponent as Logo } from "../../assets/images/logo.svg";
-import { ReactComponent as Favorites } from "../../assets/icons/favorites.svg";
-import { ReactComponent as Cart } from "../../assets/icons/cart.svg";
-import { ReactComponent as Account } from "../../assets/icons/account.svg";
+import { AccountLogo, CartLogo, Logo, FavoritesLogo } from "assets";
+
 import { useInput } from "../../hooks/useInput";
 
 export const Header = () => {
@@ -28,17 +26,17 @@ export const Header = () => {
       <NavIcons>
         <NavElement>
           <CustomLink to={ROUTE.FAVORITES}>
-            <Favorites />
+            <FavoritesLogo />
           </CustomLink>
         </NavElement>
         <NavElement>
           <CustomLink to={ROUTE.CART}>
-            <Cart />
+            <CartLogo />
           </CustomLink>
         </NavElement>
         <NavElement>
           <CustomLink to={ROUTE.ACCOUNT}>
-            <Account />
+            <AccountLogo />
           </CustomLink>
         </NavElement>
       </NavIcons>

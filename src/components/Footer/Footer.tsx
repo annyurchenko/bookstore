@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <Copyrite>©2022 Bookstore</Copyrite>
-      <Legacy>All rights not reserved</Legacy>
+      <Legacy>All rights reserved</Legacy>
     </StyledFooter>
   );
 };

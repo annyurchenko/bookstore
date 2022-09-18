@@ -1,15 +1,17 @@
 import { Route, Routes } from "react-router-dom";
+import { ROUTE } from "./routes";
 import { MainTemplate } from "./components/MainTemplate/MainTemplate";
 import { RequireAuth } from "./components/RequireAuth";
-import { AccountPage } from "./pages/AccountPage";
-import { CartPage } from "./pages/CartPage";
-import { FavoritesPage } from "./pages/FavoritesPage";
-import { HomePage } from "./pages/HomePage";
-import { NotFoundPage } from "./pages/NotFoundPage";
-import { SearchPage } from "./pages/SearchPage";
-import { SignInPage } from "./pages/SignInPage";
-import { SignUpPage } from "./pages/SignUpPage";
-import { ROUTE } from "./routes";
+import {
+  HomePage,
+  SearchPage,
+  CartPage,
+  FavoritesPage,
+  AccountPage,
+  SignInPage,
+  SignUpPage,
+  NotFoundPage,
+} from "./pages";
 
 export const App = () => {
   return (

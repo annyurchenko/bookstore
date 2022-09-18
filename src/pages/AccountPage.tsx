@@ -1,18 +1,9 @@
-import { CustomLink } from "../components/CustomLink/CustomLink";
-import { NavElement } from "../components/Header/styles";
-import { ROUTE } from "../routes";
+import { useAppSelector } from "store/hooks";
+import { Account } from "components/Account/Account";
+import { Authorisation } from "components/Authorisation/Authorisation";
 
 export const AccountPage = () => {
-  return (
-    <div>
-      <div>AccountPage</div>
+  const { isAuth } = useAppSelector((state) => state.user);
 
-      <NavElement>
-        <CustomLink to={ROUTE.SIGN_IN}>SignIn</CustomLink>
-      </NavElement>
-      <NavElement>
-        <CustomLink to={ROUTE.SIGN_UP}>SignUp</CustomLink>
-      </NavElement>
-    </div>
-  );
+  return isAuth ? <Account /> : <Authorisation />;
 };
