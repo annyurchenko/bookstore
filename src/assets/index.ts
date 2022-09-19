@@ -10,6 +10,7 @@ import { ReactComponent as MenuLogo } from "./icons/menu.svg";
 import { ReactComponent as MoreLogo } from "./icons/more-logo.svg";
 import { ReactComponent as PlusLogo } from "./icons/plus.svg";
 import { ReactComponent as SearchLogo } from "./icons/search.svg";
+import { ReactComponent as ThemeLogo } from "./icons/theme.svg";
 import { ReactComponent as TwitterLogo } from "./icons/twitter-logo.svg";
 import { ReactComponent as Logo } from "./images/logo.svg";
 
@@ -26,6 +27,7 @@ export {
   MoreLogo,
   PlusLogo,
   SearchLogo,
+  ThemeLogo,
   TwitterLogo,
   Logo,
 };

@@ -3,7 +3,7 @@ import { CustomLink } from "../CustomLink/CustomLink";
 import { StyledHeader, NavElement, NavIcons } from "./styles";
 import { SearchInput } from "../SearchInput/SearchInput";
 
-import { AccountLogo, CartLogo, Logo, FavoritesLogo } from "assets";
+import { AccountLogo, CartLogo, Logo, FavoritesLogo, ThemeLogo } from "assets";
 
 import { useInput } from "../../hooks/useInput";
 
@@ -24,6 +24,9 @@ export const Header = () => {
       </NavElement>
 
       <NavIcons>
+        <NavElement>
+          <ThemeLogo />
+        </NavElement>
         <NavElement>
           <CustomLink to={ROUTE.FAVORITES}>
             <FavoritesLogo />

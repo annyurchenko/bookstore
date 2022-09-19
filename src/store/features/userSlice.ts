@@ -1,11 +1,14 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+export type ThemeValue = "light" | "dark";
+
 interface UserState {
   id: null | string;
   isAuth: boolean;
   name: null | string;
   email: null | string;
   password: null | string;
+  theme: ThemeValue;
 }
 
 const initialState: UserState = {
@@ -14,6 +17,7 @@ const initialState: UserState = {
   name: null,
   email: "",
   password: null,
+  theme: "light",
 };
 
 const userSlice = createSlice({
